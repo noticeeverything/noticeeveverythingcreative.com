@@ -1,0 +1,5 @@
+.idea
+.nuxt
+functions-build
+node_modules
+*.log

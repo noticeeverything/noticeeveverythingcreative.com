@@ -1,0 +1,427 @@
+hr {
+	border-top: 1px solid #e8e8e8 !important;
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	margin: 2em 0 1em 0;
+}
+
+.lead {
+	font-size: 1.25rem;
+	font-weight: 300;
+}
+
+p {
+	margin: 1em 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+img, a img {
+	border: 0;
+	height: auto;
+	outline: none;
+	text-decoration: none;
+}
+
+body, #bodyTable, #bodyCell {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#outlook a {
+	padding: 0;
+}
+
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+table {
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+}
+
+.ReadMsgBody {
+	width: 100%;
+}
+
+.ExternalClass {
+	width: 100%;
+}
+
+p, a, li, td, blockquote {
+	mso-line-height-rule: exactly;
+}
+
+a[href^=tel], a[href^=sms] {
+	color: inherit;
+	cursor: default;
+	text-decoration: none;
+}
+
+p, a, li, td, body, table, blockquote {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+blockquote {
+	white-space: pre-wrap;
+	margin-left: 0;
+	padding-left: 1em;
+	border-left-style: solid;
+	border-left-color: lightgrey;
+	border-left-width: 3px;
+}
+
+a[x-apple-data-detectors] {
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
+}
+
+#bodyCell {
+	padding: 9px;
+}
+
+.templateImage {
+	height: auto;
+	max-width: 100px;
+}
+
+.templateContainer {
+	max-width: 600px !important;
+}
+
+#templateHeader, #templateBody, #templateFooter {
+	padding-right: 18px;
+	padding-left: 18px;
+}
+
+.print-button, .print-button:active, .print-button:link, .print-button:visited {
+	display: inline;
+	vertical-align: middle;
+	padding: 10px;
+	text-decoration: none !important;
+	background: #28a745;
+	color: #fff !important;
+	font-size: 12px !important;
+	border-radius: 3px !important;
+}
+
+.inline {
+	display: inline;
+	vertical-align: middle;
+}
+
+/*
+@tab Page
+@section Background Style
+*/
+body, #bodyTable {
+	background-color: #FAFAFA;
+}
+
+/*
+@tab Page
+@section Email Border
+*/
+.templateContainer {
+	border: 0;
+}
+
+/*
+@tab Page
+@section Heading 1
+*/
+h1 {
+	color: #222222;
+	font-family: Helvetica;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 150%;
+	letter-spacing: normal;
+	text-align: left;
+}
+
+/*
+@tab Page
+@section Heading 2
+*/
+h2 {
+	color: #222222;
+	font-family: Helvetica;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 150%;
+	letter-spacing: normal;
+	text-align: left;
+}
+
+/*
+@tab Page
+@section Heading 3
+*/
+h3 {
+	color: #444444;
+	font-family: Helvetica;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 150%;
+	letter-spacing: normal;
+	text-align: left;
+}
+
+/*
+@tab Page
+@section Heading 4
+*/
+h4 {
+	color: #999999;
+	font-family: Georgia;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 150%;
+	letter-spacing: normal;
+	text-align: left;
+}
+
+/*
+@tab Header
+@section Header Style
+*/
+#templateHeader {
+	background-color: #FFFFFF;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-top: 0;
+	border-bottom: 0;
+	padding-top: 18px;
+	padding-bottom: 0;
+}
+
+#templateHeader p {
+	color: #606060;
+	font-family: Helvetica;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: left;
+}
+
+#templateHeader a, #templateHeader p a {
+	color: #237A91;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+/*
+@tab Body
+@section Body Style
+*/
+#templateBody {
+	background-color: #FFFFFF;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-top: 0;
+	padding-top: 0;
+}
+
+#templateBody p, #templateBody blockquote {
+	color: #606060;
+	font-family: Helvetica;
+	line-height: 150%;
+	text-align: left;
+}
+
+#templateBody p {
+	font-size: 16px;
+}
+
+#templateBody blockquote {
+	font-size: .85em;
+}
+
+#templateBody a, #templateBody p a {
+	color: #237A91;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+/*
+@tab Footer
+@section Social Bar Style
+*/
+#templateFooter {
+	background-color: #FFFFFF;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-top: 0;
+	border-bottom: 2px solid #EAEAEA;
+	padding-top: 0;
+	padding-bottom: 9px;
+}
+
+#templateFooter p {
+	font-family: Helvetica;
+	font-size: 12px;
+	text-align: center;
+}
+
+#templateFooter a {
+	font-weight: normal;
+	text-align: center;
+	display: inline-block;
+	margin: 3px auto !important;
+}
+
+#templateFooter a img {
+	height: 30px;
+	width: auto;
+}
+
+/**
+ * @media queries
+ */
+@media only screen and (max-width: 480px) {
+	body, table, td, p, a, li, blockquote {
+		-webkit-text-size-adjust: none !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	body {
+		width: 100% !important;
+		min-width: 100% !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.templateImage {
+		width: 100% !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.mobileHide {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.utilityLink {
+		display: block;
+		padding: 9px 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	/*
+	  @tab Mobile Styles
+	  @section Heading 1
+	  */
+	h1 {
+		font-size: 22px !important;
+		line-height: 175% !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	/*
+	  @tab Mobile Styles
+	  @section Heading 2
+	  */
+	h2 {
+		font-size: 20px !important;
+		line-height: 175% !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	/*
+	  @tab Mobile Styles
+	  @section Heading 3
+	  */
+	h3 {
+		font-size: 18px !important;
+		line-height: 175% !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	/*
+	  @tab Mobile Styles
+	  @section Heading 4
+	  */
+	h4 {
+		font-size: 16px !important;
+		line-height: 175% !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	/*
+	  @tab Mobile Styles
+	  @section Header Text
+	  */
+	#templateHeader, #templateHeader p {
+		font-size: 16px !important;
+		line-height: 150% !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	/*
+	  @tab Mobile Styles
+	  @section Body Text
+	  */
+	#templateBody, #templateBody p {
+		font-size: 16px !important;
+		line-height: 150% !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	/*
+	  @tab Mobile Styles
+	  @section Footer Text
+	  */
+	#templateFooter, #templateFooter p {
+		font-size: 14px !important;
+		line-height: 150% !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	/*
+	  @tab Mobile Styles
+	  @section Social Bar Text
+	  */
+	#socialBar, #socialBar p {
+		font-size: 14px !important;
+		line-height: 150% !important;
+	}
+}

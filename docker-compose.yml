@@ -1,0 +1,29 @@
+version: '3.2'
+
+services:
+  noticeeverythingcreative_com:
+    image: 186723156933.dkr.ecr.us-west-2.amazonaws.com/applications/noticeeverythingcreative.com:${TAG:-prod}
+    container_name: noticeeverythingcreative_com
+    hostname: www.noticeeverythingcreative.com
+    restart: unless-stopped
+
+    ports:
+      # Http Port
+      - 3002
+
+    networks:
+      - web-network
+
+    environment:
+      - NODE_ENV=production
+      - PORT=3002
+      - VIRTUAL_PORT=3002
+      - API=https://www.noticeeverythingcreative.com/api
+      - HOST=www.noticeeverythingcreative.com
+      - VIRTUAL_HOST=noticeeverythingcreative.com,www.noticeeverythingcreative.com,noticeeverything.com,www.noticeeverything.com
+      - LETSENCRYPT_HOST=www.noticeeverythingcreative.com,noticeeverythingcreative.com
+      - LETSENCRYPT_EMAIL=justin@justinmcmahon.com
+
+networks:
+  web-network:
+    external: true

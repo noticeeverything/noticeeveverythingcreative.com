@@ -1,0 +1,124 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <!--[if gte mso 15]>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Thanks for Getting in Touch!</title>
+        <link rel="stylesheet" href="/styles/common.css">
+    </head>
+
+    <body>
+        <center>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+                <tr>
+                    <td align="center" valign="top" id="bodyCell">
+                        <!--[if gte mso 9]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600"
+                               style="width:600px;">
+                            <tr>
+                                <td align="center" valign="top" width="600" style="width:600px;">
+                        <![endif]-->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+                            <!-- BEGIN HEADER // -->
+                            <tr>
+                                <td valign="top" id="templateHeader">
+
+                                    <!-- HEADER IMAGE // -->
+                                    <img src="https://noticeeverythingcreative.com/images/nec-logo.png" alt=""
+                                         style="max-width:100px;"
+                                         class="templateImage">
+                                    <!-- // END HEADER IMAGE -->
+
+                                    <hr>
+
+                                </td>
+                            </tr>
+                            <!-- // END HEADER -->
+                            <!-- BEGIN BODY // -->
+                            <tr>
+                                <td valign="top" id="templateBody">
+
+                                    <!-- BODY CONTENT // -->
+                                    <div>
+                                        <p class="lead brand-purple">Hi <%= data.name %>,</p>
+
+                                        <p>
+                                            Thanks for taking the time to write! We'll be in touch with you soon. In the
+                                            meantime check out the links below and let's stay connected :)
+                                        </p>
+
+                                        <p>
+
+                                        </p>
+
+                                        <p>
+                                            Sincerely,
+                                        </p>
+
+                                        <p>
+                                            The Notice Everything Team
+                                        </p>
+                                    </div>
+                                    <!-- // END BODY CONTENT -->
+
+                                    <hr>
+                                </td>
+                            </tr>
+                            <!-- // END BODY -->
+
+                            <!-- BEGIN FOOTER // -->
+                            <tr>
+                                <td valign="top" id="templateFooter">
+
+                                    <div style="text-align:center">
+
+                                        <% if (config.social.handle) { %>
+                                            <p class="bold brand-purple"><%= config.social.handle %></p>
+                                        <% } %>
+
+                                        <% if (config.social.github.include) { %>
+                                            <a href="<%= config.social.github.link %>">
+                                                <img src="cid:EmbeddedGhLogo" alt="">
+                                            </a>
+                                        <% } %>
+
+                                        <% if (config.social.stackoverflow.include) { %>
+                                            <a href="<%= config.social.stackoverflow.link %>">
+                                                <img src="cid:EmbeddedSoLogo" alt="">
+                                            </a>
+                                        <% } %>
+
+                                        <% if (config.social.linkedin.include) { %>
+                                            <a href="<%= config.social.linkedin.link %>">
+                                                <img src="cid:EmbeddedLiLogo" alt="">
+                                            </a>
+                                        <% } %>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <!-- // END FOOTER -->
+
+                        </table>
+                        <!--[if gte mso 9]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+{
+	email: {
+		smtpOptions: {
+			host: 'secure.emailsrvr.com',
+			port: 465,
+			secure: true,
+			auth: {
+				user: 'info@noticeeverythingcreative.com',
+				pass: 'I\'11decid3'
+			}
+		}
+	},
+	http: {
+		host: 'noticeeverythingcreative.com',
+		port: 3002,
+		ssl: true
+	}
+}

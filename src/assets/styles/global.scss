@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Material Design Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: local('sans serif'), url(https://cdn.jsdelivr.net/npm/@mdi/font@latest/fonts/materialdesignicons-webfont.woff2?v=4.8.95) format('woff2');
+	font-display: swap;
+}
+
+.poiret {
+	font-family: 'Poiret One', 'Helvetica Neue', sans-serif;
+	letter-spacing: 0.2rem;
+	font-weight: bold;
+}
+
+.v-content {
+	margin-top: 60px;
+}
+
+.fade-in {
+	animation: fadeIn 0.5s ease;
+}
