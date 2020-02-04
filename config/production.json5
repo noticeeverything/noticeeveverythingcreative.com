@@ -1,18 +1,7 @@
-{
-	email: {
-		smtpOptions: {
-			host: 'secure.emailsrvr.com',
-			port: 465,
-			secure: true,
-			auth: {
-				user: 'info@noticeeverythingcreative.com',
-				pass: 'I\'11decid3'
-			}
-		}
-	},
-	http: {
-		host: 'noticeeverythingcreative.com',
-		port: 3002,
-		ssl: true
-	}
-}
+U2FsdGVkX1+RlZh++9Wlexuu4+kAlCEpXlykI4e+TWnuqZ1X6JWo9WwIh8EI9mu3
+gKRE7NXdPtfaAyYYw4HNDc0OeMEtlegxuEpt0aLkT89u1G+2T5Leikgifg7KWlt/
+Ux5nKaiCp59G6ZAyhrdFCjmTPyWd0wmsjhS6GJY2MBQ9zXRX4aRl8K8/b4PaCcUS
+Ifw5iDVB2aJ8sAfrwSFORd+zBCHJJ/3/etHYq7CDS9Nu7WuOh0BQhq/QF7KSoTii
+rANANVTDmCu+mO2lXGndkjnO6a3nGOqy3udB/04uwvHuwvyhBbOkJyz5i7FtTHNY
+vXlNyuXt10hbjfo8KKlRmAaAKjZc90KJT8sd8DSKvMkVv5/7MEn6UOezZTCKHauW
+rv1/vHpGne9ZCVyDIxlJyiuXap7/rPPr/fKr7L1pF48=

@@ -1,0 +1,8 @@
+node_modules
+config/local**
+Dockerfile
+code-style.xml
+docker-compose.yml
+scripts/
+deploy.ts
+.nuxt

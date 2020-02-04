@@ -1,12 +1,12 @@
+import { Environment } from '@/server/app/app.interfaces';
 import { join, resolve } from 'path';
-const config = require('config');
+import * as config from 'config';
 
-const templateDir = process.env.NODE_ENV === 'production' ?
-	join(resolve(), '.nuxt/server/app.email') :
-	join(resolve(), 'src/server/app/email');
+const templateDir = join(resolve(), 'src/server/app/email');
+const Env = config as Environment;
 
 export const emailConfig = {
-	smtpOptions: config.email.smtpOptions,
+	smtpOptions: Env.email.smtpOptions,
 	from: 'Notice Everything <info@noticeeverythingcreative.com>',
 	to: 'Notice Everything <info@noticeeverythingcreative.com>',
 	sender: 'Notice Everything <info@noticeeverythingcreative.com>',

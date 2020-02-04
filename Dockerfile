@@ -10,25 +10,18 @@ RUN apk add --update \
   && rm -rf /var/cache/apk/*
 
 RUN mkdir -p /app
-RUN mkdir -p /app/config
 
-COPY package.json /app
-COPY yarn.lock /app
-COPY nuxt.config.js /app
-COPY .contentful.json /app
-COPY config/default.json5 /app/config
-COPY config/production.json5 /app/config
-
-# Copy source code/libs
-COPY .nuxt /app/.nuxt
+COPY . /app
 
 # cd into app directory
 WORKDIR /app
 
 # Install dependencies
-RUN yarn install --production=true
+RUN yarn install
 
 # Http Port
 EXPOSE 3002
 
-CMD ["node", ".nuxt/server/index.js"]
+RUN yarn build.prod
+
+CMD ["yarn", "start"]

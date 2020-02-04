@@ -30,7 +30,8 @@
 			"node",
 			"@nuxt/types",
 			"@nuxt/vue-app",
-			"@nuxtjs/axios"
+			"@nuxtjs/axios",
+			"jest"
 		]
 	}
 }

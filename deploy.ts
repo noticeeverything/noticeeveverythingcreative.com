@@ -4,28 +4,6 @@ import { awsLogin, getDocker } from './scripts/shell-functions';
 
 export default <DeployStep[]>[
 	{
-		name: 'Build',
-		description: 'Test/Build',
-		commands: [{ type: 'string', cmd: 'yarn build.prod' }]
-	},
-	{
-		name: 'Copy',
-		description: 'Copy email assets to build directory',
-		commands: [
-			{ type: 'string', cmd: 'cp -R src/server/app/email/views .nuxt/server/app/email' },
-			{ type: 'string', cmd: 'cp -R src/server/app/email/img .nuxt/server/app/email' },
-			{ type: 'string', cmd: 'cp -R src/server/app/email/styles .nuxt/server/app/email' },
-			{ type: 'string', cmd: 'cp -R src/static .nuxt' }
-		]
-	},
-	{
-		name: 'Clean',
-		description: 'Clean dist directory',
-		commands: [
-			{ type: 'string', cmd: 'find ".nuxt/server" -name "*.js.map" -type f -delete' }
-		]
-	},
-	{
 		name: 'Docker Build',
 		description: 'Build/Push Docker image',
 		commands: [

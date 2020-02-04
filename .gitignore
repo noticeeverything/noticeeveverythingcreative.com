@@ -3,3 +3,4 @@
 functions-build
 node_modules
 *.log
+config/local**

@@ -1,6 +1,8 @@
-import { Controller, Get, Request, Response } from '@nestjs/common';
-import { Request as IRequest, Response as IResponse } from 'express';
+import { ENVIRONMENT_TOKEN } from '@/server/app/app.constants';
+import { Environment } from '@/server/app/app.interfaces';
+import { Controller, Get, Inject, Request, Response } from '@nestjs/common';
 import { join, resolve } from 'path';
+
 const { Builder, Nuxt } = require('nuxt');
 const nuxtConfig = require(join(resolve(), 'nuxt.config.js'));
 
@@ -9,23 +11,33 @@ export class NuxtController
 {
 	nuxt:any;
 
-	constructor()
+	constructor(@Inject(ENVIRONMENT_TOKEN) private readonly config:Environment)
 	{
-		if (process.env.NODE_ENV === 'production')
+		this.nuxt = new Nuxt(nuxtConfig);
+
+		// Build only in dev mode
+		if (this.config.name === 'development')
 		{
-			nuxtConfig.dev = false;
-			this.nuxt = new Nuxt(nuxtConfig);
+			const builder = new Builder(this.nuxt);
+			builder.build();
 		}
 		else
 		{
-			this.nuxt = new Nuxt(nuxtConfig);
-			new Builder(this.nuxt).build();
+			this.nuxt.ready();
 		}
+
 	}
 
 	@Get('*')
-	async Index(@Request() req:IRequest, @Response() res:IResponse)
+	async root(@Request() req:any, @Response() res:any)
 	{
-		await this.nuxt.render(req, res);
+		if (this.nuxt)
+		{
+			return await this.nuxt.render(req, res);
+		}
+		else
+		{
+			res.send('Nuxt is disabled.');
+		}
 	}
 }

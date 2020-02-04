@@ -1,0 +1,6 @@
+#pattern filter=crypt diff=crypt
+.contentful.json filter=crypt diff=crypt
+.google.json filter=crypt diff=crypt
+config/production.json5 filter=crypt diff=crypt
+docker-compose.yml filter=crypt diff=crypt
+scripts/deploy.constants filter=crypt diff=crypt

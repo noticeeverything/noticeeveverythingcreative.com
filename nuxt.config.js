@@ -1,12 +1,16 @@
 const cfConfig = require('./.contentful.json');
+const gSiteVerification = require('./.google.json');
 
 module.exports = {
 	mode: 'universal',
 	srcDir: './src',
 	rootDir: './',
 	modules: ['@nuxtjs/axios'],
+	server: {
+		port: 3002, // default: 3000,
+	},
 	axios: {
-		proxyHeaders: true
+		baseURL: 'http://localhost:3002'
 	},
 	buildModules: [
 		'@nuxtjs/vuetify',
@@ -18,11 +22,7 @@ module.exports = {
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{
-				hid: 'google-site-verification',
-				name: 'google-site-verification',
-				content: '8xz5eEwIDRcsv1MNipBSTdLI9-gZ0AWX2dp6ZHL2iA'
-			}
+			gSiteVerification
 		],
 		link: [
 			{ rel: 'icon', type: 'image/x-icon', href: '/icons/favicon.ico' },
@@ -30,7 +30,9 @@ module.exports = {
 		]
 	},
 	env: {
-		apiHost: process.env.API || 'http://localhost:3000/api',
+		apiHost: process.env.NODE_ENV === 'production' ?
+			'https://www.noticeeverythingcreative.com/api' :
+			'http://localhost:3002/api',
 		CTF_SPACE_ID: cfConfig.CTF_SPACE_ID,
 		CTF_CDA_ACCESS_TOKEN: cfConfig.CTF_CDA_ACCESS_TOKEN,
 		CTF_PROJECT_TYPE_ID: cfConfig.CTF_PROJECT_TYPE_ID

@@ -9,5 +9,10 @@
 				pass: ''
 			}
 		}
+	},
+	http: {
+		host: 'localhost',
+		port: 3002,
+		ssl: false
 	}
 }

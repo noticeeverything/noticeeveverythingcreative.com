@@ -1,10 +1,9 @@
 import { contentfulClientApi } from '@/plugins/contentful';
 import { Component, Vue } from 'vue-property-decorator';
 
-@Component({})
-export default class Project extends Vue
-{
-	async asyncData(ctx:any)
+@Component({
+	// TODO: this only works for a child component when placed in the @Component decorator options - why???
+	asyncData: async (ctx:any) =>
 	{
 		const data = await contentfulClientApi.getEntries({
 			content_type: 'project', 'fields.slug': ctx.params.project
@@ -14,7 +13,7 @@ export default class Project extends Vue
 		let error = undefined;
 		if (!project)
 		{
-			error = `No project found with id "${ this.$route.params.project }"`;
+			error = `No project found with id "${ ctx.$route.params.project }"`;
 			return {
 				project,
 				loading: false,
@@ -35,19 +34,12 @@ export default class Project extends Vue
 			error,
 			meta: meta.data
 		}
-	}
-
-	data()
-	{
-		return {
-			error: undefined,
-			loading: true,
-			project: undefined
-		}
-	}
-
-	head()
-	{
-		return this.$data.meta;
-	}
-}
+	},
+	head: ((ctx:any) => ctx.$data.meta) as any,
+	data: () => ({
+		error: undefined,
+		loading: true,
+		project: undefined
+	})
+})
+export default class Project extends Vue {}

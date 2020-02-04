@@ -4,9 +4,6 @@ import { Inquirer } from './inquirer';
 import { annotate, header, logError } from './shell-functions';
 
 /**
- * Interactive - simply run `yarn deploy` and follow the prompts
- * Manual - e.g., `yarn deploy --projectName=api --env=stage`
- *
  * Arguments for manual deployment
  * @param project:ProjectName (required)
  * @param env:Environment (required)

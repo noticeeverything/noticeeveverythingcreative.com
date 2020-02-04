@@ -4,7 +4,7 @@
             <v-container>
                 <v-alert text type="error" v-if="!loading && !project">{{ error }}</v-alert>
                 <div class="project" v-else>
-                    <v-btn icon @click="$nuxt.$router.back()" class="float-left">
+                    <v-btn icon to="/projects" class="float-left">
                         <v-icon>mdi-chevron-double-left</v-icon>
                     </v-btn>
                     <div v-if="project">

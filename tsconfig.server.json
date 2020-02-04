@@ -2,7 +2,7 @@
 	"compileOnSave": false,
 	"compilerOptions": {
 		"rootDir": "./src/server",
-		"outDir": ".nuxt/server",
+		"outDir": ".nuxt/api",
 		"sourceMap": true,
 		"declaration": false,
 		"moduleResolution": "node",
