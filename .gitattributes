@@ -4,4 +4,4 @@
 .google.json filter=crypt diff=crypt
 config/production.json5 filter=crypt diff=crypt
 docker-compose.yml filter=crypt diff=crypt
-scripts/deploy.constants filter=crypt diff=crypt
+scripts/deploy.constants.ts filter=crypt diff=crypt
