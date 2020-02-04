@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { EmailService, IEmailService, MailResponse } from '@noticeeverything/nest';
-import { TemplateType } from '@/server/app/email/email.interfaces';
+import { TemplateType } from './email.interfaces';
 import { emailConfig } from './email.config';
 import { buildAttachments } from './email.utils';
 

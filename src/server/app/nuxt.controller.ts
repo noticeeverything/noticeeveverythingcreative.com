@@ -1,5 +1,5 @@
-import { ENVIRONMENT_TOKEN } from '@/server/app/app.constants';
-import { Environment } from '@/server/app/app.interfaces';
+import { ENVIRONMENT_TOKEN } from './app.constants';
+import { Environment } from './app.interfaces';
 import { Controller, Get, Inject, Request, Response } from '@nestjs/common';
 import { join, resolve } from 'path';
 

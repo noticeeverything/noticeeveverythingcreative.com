@@ -1,4 +1,4 @@
-import { ENVIRONMENT_TOKEN } from '@/server/app/app.constants';
+import { ENVIRONMENT_TOKEN } from '../app/app.constants';
 import { ProjectsModule } from './projects/projects.module';
 import { Module } from '@nestjs/common';
 import { NuxtController } from './nuxt.controller';

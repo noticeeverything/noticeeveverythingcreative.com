@@ -1,4 +1,4 @@
-import { Environment } from '@/server/app/app.interfaces';
+import { Environment } from './app/app.interfaces';
 import { INestApplication } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';

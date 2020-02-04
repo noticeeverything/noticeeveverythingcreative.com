@@ -1,4 +1,4 @@
-import { Environment } from '@/server/app/app.interfaces';
+import { Environment } from '../app.interfaces';
 import { join, resolve } from 'path';
 import * as config from 'config';
 

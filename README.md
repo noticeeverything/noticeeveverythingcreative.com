@@ -1,4 +1,4 @@
-# nec-ssr
+# Notice Everything Creative
 
 > My supreme Nuxt.js project
 
@@ -12,7 +12,7 @@ $ yarn install
 $ yarn dev
 
 # build for production and launch server
-$ yarn build
+$ yarn build.prod
 $ yarn start
 
 # generate static project
