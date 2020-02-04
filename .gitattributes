@@ -1,4 +1,5 @@
 #pattern filter=crypt diff=crypt
+
 .contentful.json filter=crypt diff=crypt
 .google.json filter=crypt diff=crypt
 config/production.json5 filter=crypt diff=crypt
