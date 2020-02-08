@@ -84,9 +84,3 @@
 </template>
 
 <script lang="ts" src="./contact.ts"></script>
-
-<style scoped>
-    #contact-page {
-        margin-bottom: 20px;
-    }
-</style>
