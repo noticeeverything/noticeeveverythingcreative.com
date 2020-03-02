@@ -1,5 +1,5 @@
 import { Environment } from './app/app.interfaces';
-import { INestApplication } from '@nestjs/common';
+import { INestApplication, Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import * as config from 'config';
@@ -22,11 +22,15 @@ async function bootstrap()
 	// Listen the server
 	await app.listen(Env.http.port, () =>
 	{
-		const site = `http${ Env.http.ssl ? 's' : '' }://${ Env.http.host }:${ Env.http.port }`;
-		consola.ready({
-			message: `Revelry and awe are afoot at ${ site }`,
-			badge: true
-		});
+		Logger.log(`Revelry and awe are afoot at http${ Env.http.ssl ? 's' : '' }://` +
+			`${ Env.http.host }:${ Env.http.port }`);
+
+		const configSources = config.util.getConfigSources().map(s => s.name.split('/').pop()).join(', ');
+		Logger.log(`Configuration sources: ${ configSources }`, 'ApplicationConfig');
+		Logger.log(
+			`Using ${ config.get('name') } config in ${ process.env.NODE_ENV } mode`,
+			'ApplicationConfig'
+		);
 	});
 }
 

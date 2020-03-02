@@ -1,4 +1,5 @@
 {
+	name: 'development',
 	email: {
 		smtpOptions: {
 			host: 'smtp.gmail.com',
