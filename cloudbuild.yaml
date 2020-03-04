@@ -10,9 +10,10 @@ steps:
         gcloud beta secrets versions access --secret=nec-com-transcrypt-key latest > /secrets/nec-com-transcrypt-key
       - git clone https://github.com/elasticdog/transcrypt.git
       - ./transcrypt/transcrypt -c aes-256-cbc -p $(cat /secrets/nec-com-transcrypt-key)
-    volumes:
-      - name: 'secrets'
-        path: '/secrets'
   - name: node
     entrypoint: yarn
     args: ['build.prod']
+
+volumes:
+  - name: 'secrets'
+    path: '/secrets'
