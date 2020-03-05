@@ -1,4 +1,4 @@
 steps:
-  - name: synapio/pipelines:latest
-    args: ['bash', 'gcloud beta secrets versions access latest --secret="nec-com-transcrypt-key"']
+  - name: node
+    args: ['bash', 'gcloud secrets versions access latest --secret=nec-com-transcrypt-key']
 
