@@ -1,5 +1,5 @@
 steps:
-  - name: 'synapio/pipelines:latest'
+  - name: 'gcr.io/cloud-builders/docker'
     entrypoint: 'bash'
     args:
       - '-c'
