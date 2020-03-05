@@ -1,18 +1,20 @@
 steps:
   - name: gcr.io/cloud-builders/gcloud
-    entrypoint: "bash"
+    entrypoint: 'bash'
     args:
-      - "-c"
+      - '-c'
       - |
-        gcloud components update
-        # Store the secret is a temporary file
-        gcloud beta secrets versions access --secret=nec-com-transcrypt-key latest > key.txt
-  - name: synapio/pipelines:latest
-    entrypoint: "bash"
+        gcloud beta secrets versions access --secret=nec-com-transcrypt-key 1 > /secrets/nec-com-transcrypt-key
+    volumes:
+      - name: 'secrets'
+        path: '/secrets'
+
+  - name: 'synapio/pipelines:latest'
+    volumes:
+      - name: 'secrets'
+        path: '/secrets'
     args:
-      - "-c"
+      - '-c'
       - |
-        # For getting the secret and pass it to a command/script
-        - transcrypt -c aes-256-cbc -p '$(cat /secrets/nec-com-transcrypt-key)'
-        ./my-script.sh $(cat my-secret-file.txt)
+      - transcrypt -c aes-256-cbc -p echo "$(cat /secrets/nec-com-transcrypt-key)"
 
