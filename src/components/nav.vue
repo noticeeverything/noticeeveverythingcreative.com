@@ -33,7 +33,7 @@
         <v-tooltip bottom>
             <template v-slot:activator="{ on }">
                 <v-btn href="https://github.com/noticeeverything" icon target="_blank" v-on="on">
-                    <v-icon>mdi-github-circle</v-icon>
+                    <v-icon>mdi-github</v-icon>
                 </v-btn>
             </template>
             <span>Notice Everything on Github</span>
