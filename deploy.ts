@@ -33,9 +33,9 @@ export default <DeployStep[]>[
 		commands: [
 			{
 				type: 'fn',
-				fn: (tag:string) => `scp "container_start.sh" "${ SSH_USER }:Applications/noticeeverythingcreative.com" && ` +
-					`scp "docker-compose.yml" "${ SSH_USER }:Applications/noticeeverythingcreative.com" &&` +
-					`ssh "${ SSH_USER }" "cd ./Applications/noticeeverythingcreative.com; chmod +x ./container_start.sh;` +
+				fn: (tag:string) => `scp "container_start.sh" "${ SSH_USER }:Applications/noticeeverything/noticeeverythingcreative.com" && ` +
+					`scp "docker-compose.yml" "${ SSH_USER }:Applications/noticeeverything/noticeeverythingcreative.com" &&` +
+					`ssh "${ SSH_USER }" "cd ./Applications/noticeeverything/noticeeverythingcreative.com; chmod +x ./container_start.sh;` +
 					`./container_start.sh --tag=${ tag }"`
 			}
 		]

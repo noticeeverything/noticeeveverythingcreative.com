@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 TAG="" # optional - defaults to "latest" - docker image tag to pull
-REPO="186723156933.dkr.ecr.us-west-2.amazonaws.com/applications/noticeeverythingcreative.com"
+REPO="186723156933.dkr.ecr.us-west-2.amazonaws.com/applications/noticeeverything/noticeeverythingcreative.com"
 
 # Loop provided arguments and set local variables
 for i in "$@"; do
