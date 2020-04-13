@@ -1,0 +1,7 @@
+image: node:12.16.1
+before_script:
+  - echo "Gitlab Pipelines . . ."
+
+default:
+  script:
+    - yarn test
