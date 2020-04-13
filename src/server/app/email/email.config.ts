@@ -7,9 +7,9 @@ const Env = config as Environment;
 
 export const emailConfig = {
 	smtpOptions: Env.email.smtpOptions,
-	from: 'Notice Everything <info@noticeeverythingcreative.com>',
-	to: 'Notice Everything <info@noticeeverythingcreative.com>',
-	sender: 'Notice Everything <info@noticeeverythingcreative.com>',
+	from: 'Notice Everything <hello@noticeeverything.com>',
+	to: 'Notice Everything <hello@noticeeverything.com>',
+	sender: 'Notice Everything <hello@noticeeverything.com>',
 	templateDir,
 	viewsDir: join(templateDir, 'views'),
 	imagesDir: join(templateDir, 'img'),
@@ -21,7 +21,7 @@ export const emailConfig = {
 		headerImgCid: null,
 		company: {
 			name: 'Notice Everything',
-			email: 'info@noticeeverythingcreative.com'
+			email: 'hello@noticeeverything.com'
 		},
 		excludeSocialLinks: false,
 		social: {

@@ -1,9 +1,9 @@
 <template>
-    <v-footer :dark="$nuxt.$route.path === '/'"
-              :color="$nuxt.$route.path === '/' ? '#222' : 'default'"
+    <v-footer :dark="$route.path === '/'"
+              :color="$route.path === '/' ? '#222' : 'default'"
               fixed
               height="40">
-        <p style="width: 100%" class="text-center">
+    <p style="width: 100%" class="text-center">
             <small>
                 custom software
                 <v-icon color="red lighten-3">mdi-heart</v-icon>
@@ -13,8 +13,4 @@
     </v-footer>
 </template>
 
-<script>
-	export default {
-		name: 'site-footer'
-	};
-</script>
+<script src="./footer.ts"></script>

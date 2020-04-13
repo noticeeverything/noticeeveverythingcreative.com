@@ -8,40 +8,40 @@
 
 
   <url>
-    <loc>https://www.noticeeverythingcreative.com/</loc>
+    <loc>https://noticeeverything.com/</loc>
     <lastmod>2020-02-03T23:59:49+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://www.noticeeverythingcreative.com/contact</loc>
+    <loc>https://noticeeverything.com/contact</loc>
     <lastmod>2020-02-03T23:59:49+00:00</lastmod>
     <priority>0.80</priority>
   </url>
-  <url>
-    <loc>https://www.noticeeverythingcreative.com/projects</loc>
-    <lastmod>2020-02-03T23:59:49+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.noticeeverythingcreative.com/projects/spurling-guitars</loc>
-    <lastmod>2020-02-03T23:59:49+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.noticeeverythingcreative.com/projects/sf-historic-maps</loc>
-    <lastmod>2020-02-03T23:59:49+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.noticeeverythingcreative.com/projects/crhge</loc>
-    <lastmod>2020-02-03T23:59:49+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://www.noticeeverythingcreative.com/projects/justin-mcmahon</loc>
-    <lastmod>2020-02-03T23:59:49+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
+<!--  <url>-->
+<!--    <loc>https://noticeeverything.com/projects</loc>-->
+<!--    <lastmod>2020-02-03T23:59:49+00:00</lastmod>-->
+<!--    <priority>0.80</priority>-->
+<!--  </url>-->
+<!--  <url>-->
+<!--    <loc>https://noticeeverything.com/projects/spurling-guitars</loc>-->
+<!--    <lastmod>2020-02-03T23:59:49+00:00</lastmod>-->
+<!--    <priority>0.64</priority>-->
+<!--  </url>-->
+<!--  <url>-->
+<!--    <loc>https://noticeeverything.com/projects/sf-historic-maps</loc>-->
+<!--    <lastmod>2020-02-03T23:59:49+00:00</lastmod>-->
+<!--    <priority>0.64</priority>-->
+<!--  </url>-->
+<!--  <url>-->
+<!--    <loc>https://noticeeverything.com/projects/crhge</loc>-->
+<!--    <lastmod>2020-02-03T23:59:49+00:00</lastmod>-->
+<!--    <priority>0.64</priority>-->
+<!--  </url>-->
+<!--  <url>-->
+<!--    <loc>https://noticeeverything.com/projects/justin-mcmahon</loc>-->
+<!--    <lastmod>2020-02-03T23:59:49+00:00</lastmod>-->
+<!--    <priority>0.64</priority>-->
+<!--  </url>-->
 
 
 </urlset>
