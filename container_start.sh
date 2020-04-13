@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 TAG="" # optional - defaults to "latest" - docker image tag to pull
-REPO="186723156933.dkr.ecr.us-west-2.amazonaws.com/applications/noticeeverything/noticeeverythingcreative.com"
+REPO="186723156933.dkr.ecr.us-west-2.amazonaws.com/applications/noticeeverything/noticeeverything.com"
 
 # Loop provided arguments and set local variables
 for i in "$@"; do
@@ -27,7 +27,7 @@ if [[ -z "${TAG}" ]]; then
 fi
 
 # Our AWS ECR repo for this app
-CONTAINER_NAME="noticeeverythingcreative_com"
+CONTAINER_NAME="nec-com"
 
 # Login in to ECR
 LOGIN="$(aws ecr get-login --no-include-email)"

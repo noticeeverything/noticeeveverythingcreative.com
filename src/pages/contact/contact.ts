@@ -1,4 +1,5 @@
 import { Component, Vue } from 'vue-property-decorator';
+
 Component.registerHooks(['asyncData', 'head']);
 
 @Component({})
@@ -48,29 +49,21 @@ export default class Contact extends Vue
 		};
 	}
 
-	async asyncData(ctx:any)
-	{
-		// fetch page meta from API
-		try
-		{
-			const meta = await ctx.$axios(<any>{
-				method: 'post',
-				url: `${ ctx.env.apiHost }/contact/meta`,
-				headers: { 'Content-Type': 'application/json' }
-			});
-
-			return { meta: meta.data };
-		}
-		catch (error)
-		{
-			// Redirect to error page or 404 depending on server response
-			console.log('ERR: ', error);
-		}
-	}
-
 	head()
 	{
-		return this.$data.meta;
+		return {
+			title: 'Notice Everything Creative | Contact',
+			meta: [
+				{
+					description: 'Contact Notice Everything Creative about your custom software and web development ' +
+						'needs. We specialize in custom full-stack JavaScript web, mobile and desktop applications.',
+					'og:title': 'Notice Everything Creative | Contact',
+					'og:description': 'Contact Notice Everything Creative about your custom software and web ' +
+						'development needs. We specialize in custom full-stack JavaScript web, mobile and desktop ' +
+						'applications.'
+				}
+			]
+		};
 	}
 
 	submit()

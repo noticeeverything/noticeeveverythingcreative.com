@@ -1,9 +1,9 @@
 <template>
-    <v-app-bar :color="$nuxt.$route.path === '/' ? 'transparent' : 'white'" :fixed="true"
-               :flat="$nuxt.$route.path === '/'"
+    <v-app-bar :color="$route.path === '/' ? 'transparent' : 'white'" :fixed="true"
+               :flat="$route.path === '/'"
                :height="50">
 
-        <v-toolbar-title class="ml-0 pl-3" style="width: 300px">
+    <v-toolbar-title class="ml-0 pl-3" style="width: 300px">
             <nuxt-link to="/" style="text-decoration: none; font-weight:bold">
                 <v-img max-width="40px;" src="/images/nec.png" to="/"
                        alt="Notice Everything Creative | Custom Business Software Solutions in Reno, NV"></v-img>
@@ -19,15 +19,6 @@
                 </v-btn>
             </template>
             <span>Contact Us</span>
-        </v-tooltip>
-
-        <v-tooltip bottom>
-            <template v-slot:activator="{ on }">
-                <v-btn icon to="/projects" v-on="on">
-                    <v-icon>mdi-view-quilt</v-icon>
-                </v-btn>
-            </template>
-            <span>Projects</span>
         </v-tooltip>
 
         <v-tooltip bottom>
@@ -59,6 +50,8 @@
 
     </v-app-bar>
 </template>
+
+<script src="./navigation.ts"></script>
 
 <style scoped>
     header a, header button {

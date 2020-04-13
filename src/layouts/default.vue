@@ -9,11 +9,13 @@
 </template>
 
 <script>
-	import Navigation from '../components/nav';
-	import Footer from '../components/footer';
+	import Navigation from '../components/navigation/navigation';
+	import Footer from '../components/footer/footer';
+	import { Component } from 'vue-property-decorator';
 
-	export default {
+	@Component({
 		name: 'default',
 		components: { Navigation, Footer }
-	};
+    })
+	export default class DefaultLayout {};
 </script>

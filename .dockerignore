@@ -6,3 +6,4 @@ docker-compose.yml
 scripts/
 deploy.ts
 .nuxt
+old-pages

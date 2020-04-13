@@ -22,27 +22,4 @@ export class ContactController
 			return apiError(e);
 		}
 	}
-
-	@Post('meta')
-	async GetMeta()
-	{
-		return {
-			title: 'Notice Everything Creative | Contact',
-
-			meta: [
-				// hid is used as unique identifier. Do not use `vmid` for it as it will not work
-				{
-					hid: 'description',
-					name: 'description',
-					content: 'Contact Notice Everything Creative about your custom software and web development needs. ' +
-						'We specialize in custom full-stack JavaScript web, mobile and desktop applications.'
-				},
-				{
-					hid: 'keywords',
-					name: 'keywords',
-					content: 'custom software,web development,reno, nv, nevada, small business,custom website'
-				}
-			]
-		};
-	}
 }
