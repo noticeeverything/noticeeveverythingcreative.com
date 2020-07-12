@@ -1,5 +1,8 @@
 # Notice Everything Creative
 
+# DEPRECATED
+This repository is no longer under active development. Project moved to private NoticeEverything monorepo.
+
 > My supreme Nuxt.js project
 
 ## Build Setup
